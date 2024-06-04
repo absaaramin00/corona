@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Elegant black background */
+    color: #fff; /* White text for readability */
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1,
+  h2 {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #ddd;
+  }
+  
+  /* Card Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(33% - 20px); /* Adjust based on desired number of cards per row */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #222; /* Darker background for cards */
+    color: #ddd; /* Light text for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    cursor: pointer; /* Optional hover effect */
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* For hover effect with border */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Optional hover effect */
+    border: 2px solid #fff; /* White border on hover */
+  }
+  
+  .card__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .card__inner {
+    text-align: center;
+  }
+  
+  .card__name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Uppercase for emphasis */
+  }
+  
+  .card__name span {
+    color: #fff;
+  }
+  
+  .card__total {
+    font-size: 1.5em;
+  }
+  
+  .card__small {
+    color: #aaa;
+  }
+  
